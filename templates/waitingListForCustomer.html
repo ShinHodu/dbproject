@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>{{rName}} waiting 리스트</h1>
+
+    <form action="/searchRestaurant" method="post">
+        <p>
+
+        <div>
+            {% for row in data %}
+                    {{row[0]}}
+                    {{row[1]}}
+                    {{row[2]}}
+                    {{row[3]}}
+                <br>
+                {% endfor %}
+        </div>
+        <br>
+        <br>
+        <input type="button" value="목록으로 가기" onClick="searchRestaurant()">
+        <br>
+        
+    </form>
+
+    <script>
+        function searchRestaurant() {
+            document.location="/searchRestaurant";
+        }
+    </script>
+</body>
+</html>

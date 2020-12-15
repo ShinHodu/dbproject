@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>고객님의 성함, 연락처, 인원수를 적어주세요!</h2>
+
+<form action="/saveCustomerinfo" method="POST">
+  <input type="hidden" id="rName" name="rName" value="{{rName}}"/>
+  <input type="hidden" id="rTel" name="rTel" value="{{rTel}}"/>
+  <label for="fname">이름:</label><br>
+  <input type="text" id="fullname" name="fullname"><br>
+  <label for="lname">연락처:</label><br>
+  <input type="text" id="phoneNum" name="phoneNum"><br><br>
+  <label for="lname">인원수:</label><br>
+  <input type="text" id="accompany" name="accompany"><br><br>
+  <input type="submit" value="확인">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> /session_view/ </title>
+</head>
+<body>
+{%if session.get('logFlag')%}
+    ID: {{session.get('ID')}}<br>
+    <a href="/mainpage">메인페이지</a>
+{%else%}
+    <a href="/restaurantLogin">로그인</a>a>
+{% endif %}
+<hr>
+session
+</body>
+</html>
